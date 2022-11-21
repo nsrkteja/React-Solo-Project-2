@@ -1,5 +1,6 @@
 import React from "react"
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 function Card(props){
     return (
         <div className="card">
@@ -8,7 +9,7 @@ function Card(props){
             </div>
             <div className="side">
                 <div className="map">
-                    <img src="/public/204-2048201_vector-location-icon-png.png" className="locion"/>
+                    <FontAwesomeIcon icon={ faLocationDot } "className="locion"/>
                     <p className="location">{props.location}</p>
                     <a href={props.googleMapsUrl} className="link">View on Google Maps</a>
                 </div>
