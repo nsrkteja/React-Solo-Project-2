@@ -9,7 +9,7 @@ function Card(props){
             </div>
             <div className="side">
                 <div className="map">
-                    <FontAwesomeIcon icon={ faLocationDot } "className="locion"/>
+                    <FontAwesomeIcon icon={ faLocationDot } className="locion"/>
                     <p className="location">{props.location}</p>
                     <a href={props.googleMapsUrl} className="link">View on Google Maps</a>
                 </div>
